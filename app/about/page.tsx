@@ -71,7 +71,7 @@ export default function AboutPage() {
 
           <div className="relative overflow-hidden rounded-2xl">
             <Image
-              src="/images/team-action.png"
+              src="/images/team.jpeg"
               alt="Fundy Kraken players celebrating on the ice"
               width={720}
               height={640}
