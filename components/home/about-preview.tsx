@@ -8,7 +8,7 @@ export function AboutPreview() {
       <div className="grid items-center gap-10 lg:grid-cols-2">
         <div className="relative overflow-hidden rounded-2xl">
           <Image
-            src="/images/team-action.png"
+            src="/images/team.jpeg"
             alt="Fundy Kraken players on the ice during a game"
             width={720}
             height={520}
