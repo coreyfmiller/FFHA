@@ -19,7 +19,7 @@ export function SiteFooter() {
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-3">
             <Image
-              src="/images/krakenlogo.png"
+              src="/images/logo.png"
               alt="Fundy Female Hockey Association logo"
               width={56}
               height={56}
