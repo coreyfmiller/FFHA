@@ -16,7 +16,7 @@ export function Hero() {
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-16 text-center sm:py-24">
         <Image
-          src="/images/ffha-logo.png"
+          src="/images/krakenlogo.png"
           alt="Fundy Female Hockey Association crest"
           width={280}
           height={280}

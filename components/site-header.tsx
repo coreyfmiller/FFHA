@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
-            src="/images/ffha-logo.png"
+            src="/images/krakenlogo.png"
             alt="Fundy Female Hockey Association logo"
             width={52}
             height={52}
