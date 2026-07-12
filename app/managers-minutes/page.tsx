@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { PageBanner } from '@/components/page-banner'
-import { FileText } from 'lucide-react'
+import { FileText, Download } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Manager's Minutes | Fundy Female Hockey Association",
@@ -10,33 +10,40 @@ export const metadata: Metadata = {
 
 const documents = [
   {
-    title: "Manager's Meeting Slides - 2024/2025",
-    description: 'Slides from the annual managers meeting.',
-  },
-  {
     title: 'HNB Operations Manual',
     description: 'Refer to Section 19 — AFFILIATION.',
     href: 'https://www.hnb.ca/',
+    external: true,
   },
   {
     title: 'FFHA Jersey Tracking Form',
     description: 'Track jersey assignments for your team.',
+    href: '/documents/FFHA-JERSEY-TRACKING-FORM-2.pdf',
+    external: false,
   },
   {
     title: 'FFHA Roster Form',
-    description: 'Official team roster submission form.',
+    description: 'Official team roster submission form (2025-2026).',
+    href: '/documents/FFHA 2025_2026.xlsx',
+    external: false,
   },
   {
     title: 'Travel Permit',
     description: 'Required for out-of-province travel.',
+    href: '/documents/travel_permit.doc',
+    external: false,
   },
   {
     title: 'Budget Form',
     description: 'Team budget tracking template.',
+    href: '/documents/Blank_budget.xlsx',
+    external: false,
   },
   {
     title: 'Sponsorship Letter',
     description: 'Template letter for approaching sponsors.',
+    href: '/documents/FFHA_Sponsorship_letter_-_2024-2025.docx',
+    external: false,
   },
 ]
 
@@ -62,16 +69,16 @@ export default function ManagersMinutesPage() {
                     {doc.title}
                   </h3>
                   <p className="mt-1 text-sm text-muted-foreground">{doc.description}</p>
-                  {doc.href && (
-                    <a
-                      href={doc.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-sm font-semibold text-navy transition-colors hover:text-sky"
-                    >
-                      View Document →
-                    </a>
-                  )}
+                  <a
+                    href={doc.href}
+                    target={doc.external ? '_blank' : undefined}
+                    rel={doc.external ? 'noopener noreferrer' : undefined}
+                    download={!doc.external ? '' : undefined}
+                    className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-navy transition-colors hover:text-sky"
+                  >
+                    <Download className="h-4 w-4" />
+                    {doc.external ? 'View Document' : 'Download'}
+                  </a>
                 </div>
               </div>
             </div>

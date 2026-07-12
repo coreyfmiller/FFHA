@@ -28,6 +28,15 @@ export default function ConstitutionPage() {
             The FFHA Constitution outlines the governance structure, membership
             requirements, and operational policies of the Fundy Female Hockey Association.
           </p>
+          <a
+            href="/documents/FFHA-Constitution-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-md bg-navy px-6 py-3 font-heading text-lg font-bold uppercase tracking-wide text-navy-foreground transition-transform hover:scale-105"
+          >
+            <FileText className="h-5 w-5" />
+            View Constitution (PDF)
+          </a>
         </div>
       </section>
     </>

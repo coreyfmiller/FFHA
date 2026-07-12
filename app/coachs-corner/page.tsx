@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { PageBanner } from '@/components/page-banner'
-import { FileText } from 'lucide-react'
+import { FileText, Download } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: "Coach's Corner | Fundy Female Hockey Association",
@@ -13,11 +13,13 @@ const resources = [
     title: 'U7/U9 HNB Reference Guide',
     description: 'Questions about the FFHA U7/U9 programs? We have your answers here.',
     href: 'https://www.hnb.ca/en/minor-hockey/initiation-program',
+    external: true,
   },
   {
     title: 'U9 Playing Rules',
     description: 'Official U9 playing rules for the current season.',
-    href: 'https://www.hnb.ca/en/minor-hockey/initiation-program',
+    href: '/documents/U9_Playing_Rules.pdf',
+    external: false,
   },
 ]
 
@@ -42,12 +44,17 @@ export default function CoachsCornerPage() {
               <p className="mt-2 text-muted-foreground">{resource.description}</p>
               <a
                 href={resource.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={resource.external ? '_blank' : undefined}
+                rel={resource.external ? 'noopener noreferrer' : undefined}
+                download={!resource.external ? '' : undefined}
                 className="mt-4 inline-flex items-center gap-2 font-semibold text-navy transition-colors hover:text-sky"
               >
-                <FileText className="h-4 w-4" />
-                Click Here
+                {resource.external ? (
+                  <FileText className="h-4 w-4" />
+                ) : (
+                  <Download className="h-4 w-4" />
+                )}
+                {resource.external ? 'View on HNB' : 'Download PDF'}
               </a>
             </div>
           ))}
