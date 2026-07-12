@@ -27,7 +27,7 @@ export function Hero() {
           St. Stephen to Sussex &middot; Zone 4
         </p>
         <h1 className="mt-3 max-w-3xl font-heading text-4xl font-extrabold uppercase leading-[0.95] tracking-wide text-balance sm:text-6xl">
-          Fundy Female Hockey Association
+          Home of the Fundy Kraken
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
           The Fundy region&apos;s first all-female minor hockey association, and proud
