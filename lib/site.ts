@@ -9,6 +9,7 @@ export const HOCKEY_NB_URL = 'https://www.facebook.com/HockeyNB'
 export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Registration', href: '/register' },
   { label: 'Contact', href: '/contact' },
 ] as const
