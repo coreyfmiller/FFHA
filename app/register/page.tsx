@@ -40,7 +40,7 @@ const options = [
   {
     tag: 'Option 3',
     title: 'New to Hockey',
-    body: 'If you are new to hockey, first create a free Hockey Canada ID number and complete all required information. This gives you the ID you need to register.',
+    body: 'If you are new to hockey, first create a free Hockey Canada ID number at page.spordle.com/fundy-female-hockey-association and complete all required information. This gives you the ID you need to register.',
   },
 ]
 
@@ -132,11 +132,29 @@ export default function RegisterPage() {
             </div>
             <div className="mt-4 rounded-xl border border-sky/40 bg-sky/10 p-5 text-sm leading-relaxed text-foreground">
               <p>
-                <strong>AAA tryouts:</strong> send your $175 payment to{' '}
+                <strong>AAA tryouts:</strong> fill out the{' '}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe6_T0m6MF2qrgxQ8q_Kb_OTveLWdj087cbVkukiT2hDeXbqw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-navy underline hover:text-sky"
+                >
+                  AAA tryout form
+                </a>{' '}
+                and send your $175 payment to{' '}
                 <span className="font-semibold text-navy">ffhatreasureelite@gmail.com</span>.
               </p>
               <p className="mt-2">
-                <strong>AA tryouts:</strong> send your $125 payment to{' '}
+                <strong>AA tryouts:</strong> fill out the{' '}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfZn7SvnS-kCb6VWh9rpPFF28OfnezQhwmctFnbrJOQnYKfiQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-navy underline hover:text-sky"
+                >
+                  AA tryout form
+                </a>{' '}
+                and send your $125 payment to{' '}
                 <span className="font-semibold text-navy">ffhatreasurer2025@gmail.com</span>.
               </p>
               <p className="mt-2 text-muted-foreground">

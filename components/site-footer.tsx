@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Mail, MapPin } from 'lucide-react'
 import { FacebookIcon } from '@/components/icons/facebook'
-import { navLinks, FACEBOOK_URL, HOCKEY_NB_URL } from '@/lib/site'
+import { navLinks, secondaryLinks, FACEBOOK_URL, HOCKEY_NB_URL } from '@/lib/site'
 
 export function SiteFooter() {
   return (
@@ -54,12 +54,16 @@ export function SiteFooter() {
 
         <div>
           <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-sky">
-            Governed By
+            More
           </h3>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
-            <li>Hockey New Brunswick</li>
-            <li>Hockey Canada</li>
-            <li className="pt-2 text-white/60">Fundy Zone 4 &middot; St. Stephen to Sussex</li>
+          <ul className="mt-4 space-y-2 text-sm">
+            {secondaryLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-white/80 transition-colors hover:text-sky">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
