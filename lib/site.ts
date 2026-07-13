@@ -12,12 +12,12 @@ export const navLinks = [
   { label: 'Schedule', href: '/schedule' },
   { label: 'Teams', href: '/teams' },
   { label: 'Tournaments', href: '/tournaments' },
-  { label: 'Gallery', href: '/gallery' },
   { label: 'Registration', href: '/register' },
-  { label: 'Contact', href: '/contact' },
 ] as const
 
 export const secondaryLinks = [
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Contact', href: '/contact' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Board of Directors', href: '/board-of-directors' },
   { label: 'Volunteer', href: '/volunteer' },
