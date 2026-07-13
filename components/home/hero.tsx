@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-navy text-navy-foreground">
       <Image
-        src="/images/rink-hero.png"
+        src="/qplex.jpg"
         alt=""
         aria-hidden="true"
         fill
