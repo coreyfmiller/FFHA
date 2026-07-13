@@ -26,11 +26,7 @@ export function SiteHeader() {
           />
           <span className="flex flex-col leading-none">
             <span className="font-heading text-xl font-extrabold uppercase tracking-wide">
-              <span className="sm:hidden">FFHA</span>
-              <span className="hidden sm:inline">Fundy Female Hockey Association</span>
-            </span>
-            <span className="text-xs uppercase tracking-[0.2em] text-sky">
-              Home of the Kraken
+              Home of the Fundy Kraken
             </span>
           </span>
         </Link>
