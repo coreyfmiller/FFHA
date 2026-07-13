@@ -10,9 +10,9 @@ export function Hero() {
         aria-hidden="true"
         fill
         priority
-        className="object-cover opacity-40"
+        className="object-cover opacity-60"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/85 to-navy" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/70 to-navy" />
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pt-8 pb-16 text-center sm:pt-12 sm:pb-24">
         <Image
