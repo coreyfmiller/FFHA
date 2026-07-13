@@ -30,7 +30,7 @@ export default function TournamentsPage() {
           </div>
           <div>
             <Image
-              src="https://www.fundyfemalehockey.ca/wp-content/uploads/sites/2776/2025/10/IMG_9137-683x1024.jpg"
+              src="/KrakenKup.jpg"
               alt="The Kraken Kup is back!"
               width={683}
               height={1024}
