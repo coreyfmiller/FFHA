@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/85 to-navy" />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-16 text-center sm:py-24">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pt-8 pb-16 text-center sm:pt-12 sm:pb-24">
         <Image
           src="/images/logo.png"
           alt="Fundy Female Hockey Association crest"
