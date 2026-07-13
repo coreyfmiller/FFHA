@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { navLinks, REGISTER_URL } from '@/lib/site'
+import { navLinks } from '@/lib/site'
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
@@ -53,14 +53,6 @@ export function SiteHeader() {
               </Link>
             )
           })}
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 rounded-md bg-sky px-4 py-2 font-heading text-lg font-bold uppercase tracking-wide text-sky-foreground transition-transform hover:scale-105"
-          >
-            Register
-          </a>
         </nav>
 
         <button
@@ -94,17 +86,6 @@ export function SiteHeader() {
                 </li>
               )
             })}
-            <li>
-              <a
-                href={REGISTER_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="mt-1 block rounded-md bg-sky px-3 py-2 text-center font-heading text-lg font-bold uppercase tracking-wide text-sky-foreground"
-              >
-                Register to Play
-              </a>
-            </li>
           </ul>
         </nav>
       )}
