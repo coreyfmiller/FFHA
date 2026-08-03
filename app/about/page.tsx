@@ -81,6 +81,26 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Logos side by side — remove this section to undo */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-center sm:gap-16">
+          <Image
+            src="/logo.png"
+            alt="Fundy Female Hockey Association logo"
+            width={200}
+            height={200}
+            className="h-40 w-40 object-contain sm:h-48 sm:w-48"
+          />
+          <Image
+            src="/FundyKraken.png"
+            alt="Fundy Kraken mascot"
+            width={200}
+            height={200}
+            className="h-40 w-40 object-contain sm:h-48 sm:w-48"
+          />
+        </div>
+      </section>
+
       <section className="bg-muted">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

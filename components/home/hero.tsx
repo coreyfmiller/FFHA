@@ -15,14 +15,24 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/70 to-navy" />
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pt-8 pb-16 text-center sm:pt-12 sm:pb-24">
-        <Image
-          src="/images/logo.png"
-          alt="Fundy Female Hockey Association crest"
-          width={280}
-          height={280}
-          priority
-          className="h-44 w-44 drop-shadow-2xl sm:h-64 sm:w-64"
-        />
+        <div className="flex items-center justify-center gap-6 sm:gap-10">
+          <Image
+            src="/images/logo.png"
+            alt="Fundy Female Hockey Association crest"
+            width={280}
+            height={280}
+            priority
+            className="h-32 w-32 drop-shadow-2xl sm:h-52 sm:w-52"
+          />
+          <Image
+            src="/FundyKraken.png"
+            alt="Fundy Kraken mascot"
+            width={280}
+            height={280}
+            priority
+            className="h-32 w-32 drop-shadow-2xl sm:h-52 sm:w-52"
+          />
+        </div>
         <p className="mt-8 font-heading text-sm font-semibold uppercase tracking-[0.35em] text-sky">
           St. Stephen to Sussex &middot; Zone 4
         </p>
