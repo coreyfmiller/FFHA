@@ -81,23 +81,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Logos side by side — remove this section to undo */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-center sm:gap-16">
-          <Image
-            src="/logo.png"
-            alt="Fundy Female Hockey Association logo"
-            width={200}
-            height={200}
-            className="h-40 w-40 object-contain sm:h-48 sm:w-48"
-          />
-          <Image
-            src="/FundyKraken.png"
-            alt="Fundy Kraken mascot"
-            width={200}
-            height={200}
-            className="h-40 w-40 object-contain sm:h-48 sm:w-48"
-          />
+      {/* The Kraken identity section */}
+      <section className="bg-navy">
+        <div className="mx-auto max-w-6xl px-4 py-16">
+          <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
+            <div className="shrink-0">
+              <Image
+                src="/FundyKraken.png"
+                alt="Fundy Kraken crest"
+                width={280}
+                height={280}
+                className="h-52 w-52 drop-shadow-2xl sm:h-64 sm:w-64"
+              />
+            </div>
+            <div className="text-center lg:text-left">
+              <p className="font-heading text-sm font-semibold uppercase tracking-[0.3em] text-sky">
+                Our Identity
+              </p>
+              <h2 className="mt-2 font-heading text-3xl font-extrabold uppercase tracking-wide text-white sm:text-4xl">
+                The Kraken
+              </h2>
+              <p className="mt-2 text-lg font-medium text-sky">
+                Named for the Bay of Fundy. Built for the ice.
+              </p>
+              <p className="mt-4 max-w-xl leading-relaxed text-white/75">
+                Every FFHA athlete wears the Kraken crest. It represents the strength and
+                force of the Bay of Fundy tides, the most powerful in the world. From U7 to
+                U15, recreation to competitive, one identity, one team.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
