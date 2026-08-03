@@ -86,18 +86,20 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="FFHA on Facebook"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-sky hover:text-sky-foreground"
+                className="flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-2 text-xs font-medium transition-colors hover:bg-sky hover:text-sky-foreground"
               >
                 <FacebookIcon className="h-4 w-4" />
+                FFHA
               </a>
               <a
                 href={HOCKEY_NB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Hockey New Brunswick on Facebook"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-sky hover:text-sky-foreground"
+                className="flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-2 text-xs font-medium transition-colors hover:bg-sky hover:text-sky-foreground"
               >
                 <FacebookIcon className="h-4 w-4" />
+                Hockey NB
               </a>
             </li>
           </ul>
