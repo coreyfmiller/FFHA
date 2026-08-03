@@ -16,14 +16,6 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-sky/30 bg-navy text-navy-foreground">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image
-            src="/images/logo.png"
-            alt="Fundy Female Hockey Association logo"
-            width={52}
-            height={52}
-            className="h-12 w-12 object-contain"
-            priority
-          />
           <span className="flex flex-col leading-none">
             <span className="font-heading text-xl font-extrabold uppercase tracking-wide">
               <span className="sm:hidden">FFHA</span>
