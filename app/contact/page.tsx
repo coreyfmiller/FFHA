@@ -15,19 +15,19 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Registrar',
-    value: 'kraken.ffharegistrar@gmail.com',
+    value: 'Click to email',
     href: 'mailto:kraken.ffharegistrar@gmail.com',
   },
   {
     icon: Mail,
     label: 'Elite (AAA) Treasurer',
-    value: 'ffhatreasureelite@gmail.com',
+    value: 'Click to email',
     href: 'mailto:ffhatreasureelite@gmail.com',
   },
   {
     icon: Mail,
     label: 'Treasurer (AA)',
-    value: 'ffhatreasurer2025@gmail.com',
+    value: 'Click to email',
     href: 'mailto:ffhatreasurer2025@gmail.com',
   },
 ]
