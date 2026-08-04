@@ -10,14 +10,6 @@ export function ChatWidget() {
 
   const { messages, input, handleInputChange, handleSubmit, isLoading, error } = useChat({
     api: '/api/chat',
-    initialMessages: [
-      {
-        id: 'welcome',
-        role: 'assistant',
-        content:
-          "Hey! I'm the Kraken. I can help with registration, fees, schedules, teams, and anything else about FFHA. What can I help you with?",
-      },
-    ],
   })
 
   useEffect(() => {
@@ -60,6 +52,13 @@ export function ChatWidget() {
 
           {/* Messages */}
           <div className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+            {messages.length === 0 && (
+              <div className="flex justify-start">
+                <div className="max-w-[85%] rounded-2xl bg-muted px-4 py-2.5 text-sm leading-relaxed text-foreground">
+                  Hey! Ask me anything about FFHA, registration, fees, schedules, or teams.
+                </div>
+              </div>
+            )}
             {messages.map((message) => (
               <div
                 key={message.id}
