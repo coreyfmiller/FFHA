@@ -11,8 +11,6 @@ interface Message {
 const SUGGESTIONS = [
   'How do I register?',
   'How much does it cost?',
-  'How do I transfer?',
-  'What teams are there?',
 ]
 
 export function ChatWidget() {
