@@ -86,25 +86,27 @@ export default function RegisterPage() {
             <h3 className="font-heading text-2xl font-bold uppercase tracking-wide text-navy">
               Season Fees
             </h3>
-            <div className="mt-4 overflow-hidden rounded-2xl border border-border">
-              <table className="w-full text-left">
-                <thead className="bg-navy text-navy-foreground">
-                  <tr>
-                    <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Division</th>
-                    <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Birth Years</th>
-                    <th className="px-5 py-3 text-right font-heading text-sm font-bold uppercase tracking-wide">Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {seasonFees.map((row, i) => (
-                    <tr key={row.division} className={i % 2 ? 'bg-muted' : 'bg-card'}>
-                      <td className="px-5 py-3 font-heading text-lg font-bold text-navy">{row.division}</td>
-                      <td className="px-5 py-3 text-sm text-muted-foreground">{row.years}</td>
-                      <td className="px-5 py-3 text-right font-semibold text-foreground">{row.fee}</td>
+            <div className="overflow-x-auto">
+              <div className="mt-4 overflow-hidden rounded-2xl border border-border">
+                <table className="w-full text-left">
+                  <thead className="bg-navy text-navy-foreground">
+                    <tr>
+                      <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Division</th>
+                      <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Birth Years</th>
+                      <th className="px-5 py-3 text-right font-heading text-sm font-bold uppercase tracking-wide">Fee</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {seasonFees.map((row, i) => (
+                      <tr key={row.division} className={i % 2 ? 'bg-muted' : 'bg-card'}>
+                        <td className="px-5 py-3 font-heading text-lg font-bold text-navy">{row.division}</td>
+                        <td className="px-5 py-3 text-sm text-muted-foreground">{row.years}</td>
+                        <td className="px-5 py-3 text-right font-semibold text-foreground">{row.fee}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
@@ -112,23 +114,25 @@ export default function RegisterPage() {
             <h3 className="font-heading text-2xl font-bold uppercase tracking-wide text-navy">
               Competitive Tryouts <span className="text-base font-semibold text-muted-foreground">(Optional)</span>
             </h3>
-            <div className="mt-4 overflow-hidden rounded-2xl border border-border">
-              <table className="w-full text-left">
-                <thead className="bg-navy text-navy-foreground">
-                  <tr>
-                    <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Level</th>
-                    <th className="px-5 py-3 text-right font-heading text-sm font-bold uppercase tracking-wide">Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tryoutFees.map((row, i) => (
-                    <tr key={row.division} className={i % 2 ? 'bg-muted' : 'bg-card'}>
-                      <td className="px-5 py-3 font-heading text-lg font-bold text-navy">{row.division}</td>
-                      <td className="px-5 py-3 text-right font-semibold text-foreground">{row.fee}</td>
+            <div className="overflow-x-auto">
+              <div className="mt-4 overflow-hidden rounded-2xl border border-border">
+                <table className="w-full text-left">
+                  <thead className="bg-navy text-navy-foreground">
+                    <tr>
+                      <th className="px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide">Level</th>
+                      <th className="px-5 py-3 text-right font-heading text-sm font-bold uppercase tracking-wide">Fee</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {tryoutFees.map((row, i) => (
+                      <tr key={row.division} className={i % 2 ? 'bg-muted' : 'bg-card'}>
+                        <td className="px-5 py-3 font-heading text-lg font-bold text-navy">{row.division}</td>
+                        <td className="px-5 py-3 text-right font-semibold text-foreground">{row.fee}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div className="mt-4 rounded-xl border border-sky/40 bg-sky/10 p-5 text-sm leading-relaxed text-foreground">
               <p>

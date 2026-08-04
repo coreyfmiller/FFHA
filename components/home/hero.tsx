@@ -22,7 +22,7 @@ export function Hero() {
             width={280}
             height={280}
             priority
-            className="h-32 w-32 drop-shadow-2xl sm:h-52 sm:w-52"
+            className="h-24 w-24 drop-shadow-2xl sm:h-52 sm:w-52"
           />
           <Image
             src="/FundyKraken.png"
@@ -30,7 +30,7 @@ export function Hero() {
             width={280}
             height={280}
             priority
-            className="h-32 w-32 drop-shadow-2xl sm:h-52 sm:w-52"
+            className="h-24 w-24 drop-shadow-2xl sm:h-52 sm:w-52"
           />
         </div>
         <p className="mt-8 font-heading text-sm font-semibold uppercase tracking-[0.35em] text-sky">

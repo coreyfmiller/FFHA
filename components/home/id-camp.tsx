@@ -40,7 +40,7 @@ export function IdCamp() {
             </div>
             <div className="flex items-center justify-center bg-navy p-8">
               <div className="text-center">
-                <p className="font-heading text-7xl font-extrabold leading-none text-sky sm:text-8xl">
+                <p className="font-heading text-5xl font-extrabold leading-none text-sky sm:text-7xl">
                   2026
                 </p>
                 <p className="mt-2 font-heading text-2xl font-bold uppercase tracking-[0.2em] text-navy-foreground">

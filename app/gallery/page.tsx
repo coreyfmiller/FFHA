@@ -55,6 +55,7 @@ export default function GalleryPage() {
                 alt="Fundy Kraken hockey"
                 width={768}
                 height={1024}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="h-auto w-full object-cover transition-transform hover:scale-105"
               />
             </div>

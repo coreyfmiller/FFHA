@@ -25,6 +25,7 @@ export default function TournamentsPage() {
               alt="The Kraken Kup"
               width={1024}
               height={720}
+              sizes="100vw"
               className="h-auto w-full rounded-2xl object-cover"
             />
           </div>
@@ -34,6 +35,7 @@ export default function TournamentsPage() {
               alt="The Kraken Kup is back!"
               width={683}
               height={1024}
+              sizes="100vw"
               className="h-auto w-full rounded-2xl object-cover"
             />
           </div>

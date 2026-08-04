@@ -51,6 +51,7 @@ export default function TeamsPage() {
                 alt={team.name}
                 width={1024}
                 height={1024}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="h-auto w-full object-cover"
               />
               <div className="p-4 text-center">
