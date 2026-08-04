@@ -45,7 +45,7 @@ export function ChatWidget() {
             <div className="flex items-center gap-2">
               <Bot className="h-5 w-5 text-sky" />
               <div>
-                <p className="text-sm font-bold">Kraken Bot</p>
+                <p className="text-sm font-bold">Ask the Kraken</p>
                 <p className="text-xs text-white/60">FFHA Assistant</p>
               </div>
             </div>
