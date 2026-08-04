@@ -107,8 +107,11 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-4 py-5 text-center text-xs text-white/50">
-          &copy; {new Date().getFullYear()} Fundy Female Hockey Association. All rights reserved.
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-1 px-4 py-5 text-xs text-white/50">
+          <span>&copy; {new Date().getFullYear()} Fundy Female Hockey Association. All rights reserved.</span>
+          <a href="https://fundylaunch.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-sky">
+            Built by FundyLaunch.com
+          </a>
         </div>
       </div>
     </footer>
