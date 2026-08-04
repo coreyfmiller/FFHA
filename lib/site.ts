@@ -1,5 +1,5 @@
 export const REGISTER_URL =
-  'https://page.spordle.com/fundy-female-hockey-association/participant/1f1634cb-3fa8-6a88-a98a-02b8a6d9f107'
+  'https://page.spordle.com/fundy-female-hockey-association'
 
 export const FACEBOOK_URL =
   'https://www.facebook.com/Fundy-Female-Hockey-Association-110686601229048/'
