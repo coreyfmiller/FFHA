@@ -116,7 +116,7 @@ export function ChatWidget() {
             {messages.length === 0 && (
               <div className="flex justify-start">
                 <div className="max-w-[85%] rounded-2xl bg-muted px-4 py-2.5 text-sm leading-relaxed text-foreground">
-                  Hey! Ask me anything about FFHA, registration, fees, schedules, or teams.
+                  Hey there! Got questions about the Kraken? I can help with registration, fees, teams, schedules, whatever you need. Fire away!
                 </div>
               </div>
             )}
