@@ -86,10 +86,11 @@ export function ChatWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-navy text-white shadow-lg transition-transform hover:scale-110"
+          className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-navy px-4 py-3 text-white shadow-lg transition-transform hover:scale-105"
           aria-label="Ask the Kraken"
         >
-          <MessageCircle className="h-6 w-6" />
+          <MessageCircle className="h-5 w-5" />
+          <span className="text-sm font-bold">Ask the Kraken</span>
         </button>
       )}
 
