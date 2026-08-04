@@ -8,14 +8,14 @@ export function ChatWidget() {
   const [open, setOpen] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
+  const { messages, input, handleInputChange, handleSubmit, isLoading, error } = useChat({
     api: '/api/chat',
     initialMessages: [
       {
         id: 'welcome',
         role: 'assistant',
         content:
-          "Hey! I'm the Kraken Bot. I can help with registration, fees, schedules, teams, and anything else about FFHA. What can I help you with?",
+          "Hey! I'm the Kraken. I can help with registration, fees, schedules, teams, and anything else about FFHA. What can I help you with?",
       },
     ],
   })
@@ -80,6 +80,13 @@ export function ChatWidget() {
               <div className="flex justify-start">
                 <div className="max-w-[85%] rounded-2xl bg-muted px-4 py-2.5 text-sm text-muted-foreground">
                   <span className="animate-pulse">Thinking...</span>
+                </div>
+              </div>
+            )}
+            {error && (
+              <div className="flex justify-start">
+                <div className="max-w-[85%] rounded-2xl bg-red-500/10 px-4 py-2.5 text-sm text-red-400">
+                  Something went wrong. Try again.
                 </div>
               </div>
             )}
