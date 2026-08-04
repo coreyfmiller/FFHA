@@ -9,12 +9,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@ai-sdk/google": "^4.0.32",
+    "@ai-sdk/openai": "^4.0.28",
+    "@ai-sdk/react": "^4.0.53",
     "@base-ui/react": "^1.5.0",
     "@vercel/analytics": "1.6.1",
+    "ai": "^7.0.50",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
     "next": "16.2.6",
+    "openai": "^7.4.0",
     "react": "^19",
     "react-dom": "^19",
     "shadcn": "^4.8.0",

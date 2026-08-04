@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Barlow_Condensed, Open_Sans } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
+import { ChatWidget } from '@/components/chat-widget'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
@@ -39,6 +40,7 @@ export default function RootLayout({
         <SiteHeader />
         <main id="fl-main-content">{children}</main>
         <SiteFooter />
+        <ChatWidget />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
